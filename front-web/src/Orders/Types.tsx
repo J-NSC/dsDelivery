@@ -6,8 +6,17 @@ export type Product = {
     "description":string;
 }
 
-export type OrderLocationdata= {
+export type OrderLocationData= {
     latitude: number;
     longitude: number;
     address: string;
 }
+
+type PorductId ={
+    id: number
+}
+
+export type OrderPayload ={
+    products : PorductId[];
+} & OrderLocationData;
+
