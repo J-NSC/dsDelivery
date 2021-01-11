@@ -1,4 +1,3 @@
-import { type } from "os";
 import { formatPrice } from "./Helpers";
 
 type Props ={
@@ -10,7 +9,7 @@ type Props ={
 function OrderSummary({amount, totalPrice, onSubmit}: Props) {
     return (
         <div className="order-summary-container">
-            <div className="order=summary-content">
+            <div className="order-summary-content">
                 <div>
                     <span className="amount-selected-container">
                         <strong className="amount-selected"> {amount}</strong>
