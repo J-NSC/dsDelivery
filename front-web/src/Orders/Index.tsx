@@ -21,7 +21,7 @@ function Orders(){
         fetchProduct()
             .then(response => setProduct(response.data))
             .catch(error => {
-              toast.warning('Erro ao enviar pedido');
+              toast.warning('Erro ao lista os pedido');
             });
     }, [])
 
